@@ -1,0 +1,20 @@
+name: FIE463
+channels:
+  - defaults
+dependencies:
+  - python=3.13
+  - numpy=2.3
+  - scipy=1.16
+  - matplotlib=3.10
+  - pandas=2.3
+  - openpyxl=3.1.5
+  - notebook=7
+  - ipykernel=6
+  - ipython=9
+  - jupyter_client=8.6
+  - jupyter_core=5
+  - jupyter_server=2
+  - scikit-learn=1.6
+  - pip
+  - pip:
+    - yfinance>=1.0
