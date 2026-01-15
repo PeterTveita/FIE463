@@ -30,9 +30,26 @@
     are the same as those used by the instructor.
 
 -   To do so, use the Anaconda Prompt (Windows) or the terminal (macOS)
-    and copy the following code:
+    and run the following command:
     ```bash
     conda env create -f environment.yml
     ```
     Note that this must be run from the directory where `environment.yml`
-    is located and creates an environment called `FIE463`.
+    is located. It creates an environment called `FIE463`.
+
+### Note for macOS users on Intel chips
+
+- Apple and Anaconda have 
+   [terminated support](https://www.anaconda.com/blog/intel-mac-package-support-deprecation) 
+   for Intel-based Macs,
+   and hence some of the packages in `environment.yml` may not be
+   available for your platform.
+
+- There is an alternative environment definition file 
+   [`environment-intel-mac.yml`](../environment-intel-mac.yml) 
+   for such cases. Create the environment as follows:
+    ```bash
+    conda env create -f environment-intel-mac.yml
+    ```
+- Note that some packages will be outdated and may be missing some 
+  of the features we use in the course.
