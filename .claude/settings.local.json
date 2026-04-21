@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python)"
+      "Bash(python)",
+      "Bash(python3 -c ' *)",
+      "Bash(pdftotext \"/Users/petertveita/Documents/GitHub/FIE463/Term papers/Term paper 2/FIE463_Term_Paper_2.pdf\" -)",
+      "Bash(pip3 install *)"
     ]
   }
 }
